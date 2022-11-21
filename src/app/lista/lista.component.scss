@@ -1,0 +1,14 @@
+.main-container{
+  border: solid 1px red;
+  background-color: var(--colorPrimario);
+  h2{
+    text-align: center;
+  }
+  .lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    border: solid 1px green;
+  }
+}
