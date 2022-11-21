@@ -1,1 +1,9 @@
-<p>historial works!</p>
+<div class="main-container">
+  <h2>Historial</h2>
+  <div class="historial">
+    <div class="historial__elemento" *ngFor="let boton of botones">
+      <p>color: {{this.boton.color}}</p>
+      <p>veces precionado en su momento: {{this.boton.vecesClickeado}}</p>
+    </div>
+  </div>
+</div>

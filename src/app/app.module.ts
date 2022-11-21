@@ -8,6 +8,7 @@ import { HistorialComponent } from './historial/historial.component';
 import { BotonComponent } from './boton/boton.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { HeaderComponent } from './header/header.component';
+import { InformacionComponent } from './informacion/informacion.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './header/header.component';
     HistorialComponent,
     BotonComponent,
     InicioComponent,
-    HeaderComponent
+    HeaderComponent,
+    InformacionComponent,
   ],
   imports: [
     BrowserModule,

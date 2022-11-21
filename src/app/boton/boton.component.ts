@@ -1,3 +1,4 @@
+import { ComunicacionService } from './../comunicacion.service';
 import { Boton } from './../boton.interface';
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
@@ -10,7 +11,7 @@ export class BotonComponent implements OnInit {
   @Input() botonEntrante: Boton;
   @Output() salida = new EventEmitter<number>();
 
-  constructor() { 
+  constructor(private comunicacion: ComunicacionService) { 
     this.botonEntrante = 
     {
       color: "oro",
@@ -24,5 +25,6 @@ export class BotonComponent implements OnInit {
   botonPrecionado(): void{
     this.botonEntrante.vecesClickeado++;
     this.salida.emit(this.botonEntrante.vecesClickeado);
+    this.comunicacion.agregar(this.botonEntrante);
   }
 }
